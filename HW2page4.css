@@ -1,0 +1,137 @@
+body {
+  background-image: url(./green.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Caveat", cursive;
+}
+
+#navbar {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  position: sticky;
+  top: 50px;
+  padding: 10px;
+}
+
+#navbar ul {
+  display: flex;
+  gap: 10px;
+  margin-right: auto;
+  padding: 10px;
+}
+
+header {
+  position: sticky;
+  top: 10px;
+  backdrop-filter: blur(10px);
+  width: fit-content;
+}
+a {
+  padding: 1px;
+}
+
+li {
+  list-style: none;
+}
+
+#mobail-nav {
+  display: none;
+}
+
+#mobail-nav ul {
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+#menu {
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+}
+
+@media (max-width: 700px) {
+  #navbar {
+    display: none;
+  }
+  #mobail-nav {
+    display: block;
+  }
+  #mobail-nav ul {
+    flex-direction: column;
+    padding-left: 30px;
+  }
+}
+.floating-menu {
+  border: 1px solid rgb(12, 12, 12);
+  box-shadow: 0 0 4px 3px rgb(38, 94, 64);
+  backdrop-filter: blur(100px);
+  position: absolute;
+  width: 150px;
+  top: 0;
+  z-index: 1;
+  /* transform: translateX(20%);
+  transition: all 5s ease-in; */
+  display: none;
+}
+
+.floating-menu li {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+#close-menu {
+  position: absolute;
+  left: 0;
+}
+
+.currentsub {
+  border: 2px solid black;
+  border-radius: 10px;
+  text-shadow: 0px 0px 10px rgb(8, 67, 30);
+  padding: 5px;
+}
+
+a:hover {
+  text-shadow: 0px 0px 10px black;
+  box-shadow: 0px -1px 20px 5px whitesmoke;
+  transform-style: preserve-3d;
+}
+
+.image {
+  width: 300px;
+  border-radius: 100px;
+}
+
+section p {
+  display: flex;
+  padding: 20px;
+}
+
+section {
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.info_img {
+  flex: 10%;
+}
+
+.info_p {
+  flex: 60%;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  text-shadow: 0px 0px 10px rgb(8, 67, 30);
+}
